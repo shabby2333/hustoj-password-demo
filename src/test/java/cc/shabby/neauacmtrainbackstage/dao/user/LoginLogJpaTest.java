@@ -1,25 +1,22 @@
 package cc.shabby.neauacmtrainbackstage.dao.user;
 
-import cc.shabby.neauacmtrainbackstage.NeauacmTrainBackstageApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.junit.Assert.*;
 
-@SpringBootTest(classes = NeauacmTrainBackstageApplication.class)
+@SpringBootTest
 @RunWith(SpringRunner.class)
-public class UserJpaTest {
+public class LoginLogJpaTest {
 
     @Autowired
-    UserJpa userJpa;
+    LoginLogJpa loginLogJpa;
 
     @Test
-    public void findOne(){
-        //System.out.println(userJpa.findAll());
-        System.out.println(userJpa.findById("neau_admin"));
+    public void findAll(){
+        System.out.println(loginLogJpa.findAll());
     }
 }

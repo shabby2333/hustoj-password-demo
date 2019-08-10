@@ -7,8 +7,4 @@ spring:
     password: lRaaCs7NTIaFAkWx
   jpa:
     open-in-view: true
-    properties:
-      hibernite:
-        enable_lazy_load_no_trans: true
-
-    show-sql: true
+    show-sql: false
