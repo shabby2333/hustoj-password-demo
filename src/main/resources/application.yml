@@ -1,0 +1,14 @@
+debug: false
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://cdb-p63mdyqy.cd.tencentcdb.com:10031/neauacm_train?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=true
+    username: train
+    password: lRaaCs7NTIaFAkWx
+  jpa:
+    open-in-view: true
+    properties:
+      hibernite:
+        enable_lazy_load_no_trans: true
+
+    show-sql: true
